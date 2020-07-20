@@ -19,7 +19,6 @@ v-sheet.mx-auto.mt-6.rounded-lg(
 					v-model="userName"
 					:rules="loginRules"
 					label="Логин"
-					placeholder="Логин"
 					color="accent"
 				)
 					//- Препенд-иконка
@@ -33,7 +32,6 @@ v-sheet.mx-auto.mt-6.rounded-lg(
 					:rules="passwordRules"
 					:type="showPassword ? 'text' : 'password'"
 					label="Пароль"
-					placeholder="Пароль"
 					color="accent"
 				)
 					//- Препенд-иконка
