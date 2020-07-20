@@ -1,0 +1,17 @@
+{
+
+	"user-login": {
+		"success": true,
+		"token": "e432e-909832-add90-ff23333"
+	},
+
+	"user-data": {
+		"email": "romkai@yandex.ru",
+		"name": "Роман Кайрис",
+		"city": "Костанай",
+		"country": "Казахстан",
+		"phone": "+7(775)224-70-12",
+		"image_url": "https://i1.mycdn.me/i?r=AyH4iRPQ2q0otWIFepML2LxR5miepuX7740bfJJ2dooxjw"
+	} 
+
+}
