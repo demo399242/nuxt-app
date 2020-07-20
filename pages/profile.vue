@@ -74,7 +74,7 @@ v-sheet.mx-auto.mt-6.pb-6.rounded-lg(
 					v-col.py-2.text--secondary.text-subtitle-2(cols="3") Страна
 					v-col.py-0.text-body-1(cols="7") 
 						v-text-field.text-body-1(
-							:value="'Казахстан'"
+							:value="userInfo.country"
 							dense
 							color="accent"
 							hide-details
@@ -85,7 +85,7 @@ v-sheet.mx-auto.mt-6.pb-6.rounded-lg(
 					v-col.py-2.text--secondary.text-subtitle-2(cols="3") Город
 					v-col.py-0.text-body-1(cols="7")
 						v-text-field.text-body-1(
-							:value="'Костанай'"
+							:value="userInfo.city"
 							dense
 							color="accent"
 							hide-details
@@ -96,7 +96,7 @@ v-sheet.mx-auto.mt-6.pb-6.rounded-lg(
 					v-col.py-2.text--secondary.text-subtitle-2(cols="3") Телефон
 					v-col.py-0.text-body-1(cols="7") 
 						v-text-field.text-body-1(
-							:value="'+7(775)224-70-12'"
+							:value="userInfo.phone"
 							dense
 							color="accent"
 							hide-details
