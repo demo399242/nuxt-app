@@ -23,14 +23,15 @@ npm run dev
 
 
 #-----------------------------------------
-# Создание Docker image и его запуск
+# Dockerfile
 #-----------------------------------------
 
-1. Создать image "nuxt-app" согласно инструкции в Dockerfile
-
-docker build -f nuxt-app .
-
-2. Запустить image "nuxt-app"
-
-docker run nuxt-app
+FROM node:10
+WORKDIR /app
+ADD . /app/
+RUN npm install
+RUN npm run build
+ENV HOST 0.0.0.0
+EXPOSE 3000
+CMD [ "npm", "start" ]
 

@@ -1,20 +1,37 @@
-# nuxtjs
 
-## Build Setup
+#-----------------------------------------
+# Запуск тестового задания
+#-----------------------------------------
 
-```bash
-# install dependencies
-$ npm install
+1. Установить зависимости 
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+npm install
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+2. Установить фейковый json-server
 
-# generate static project
-$ npm run generate
-```
+sudo npm install -g json-server
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+3. Запустить его
+
+json-server --watch db.json --port 8000
+
+4. Запустить nuxt проект
+
+npm run dev
+
+5. Зайти на адрес http://localhost:3000/
+
+
+#-----------------------------------------
+# Dockerfile
+#-----------------------------------------
+
+FROM node:10
+WORKDIR /app
+ADD . /app/
+RUN npm install
+RUN npm run build
+ENV HOST 0.0.0.0
+EXPOSE 3000
+CMD [ "npm", "start" ]
+
